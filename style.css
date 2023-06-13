@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: #333;
+}
+
+header{
+    background-color: rgb(81, 81, 81);
+    width:98%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 3px;
+    padding: 10px;
+    direction: ltr;
+    font-size: small;
+  }
+  header img{
+    width: 25%;
+ display: flex;
+  }
+  .navigation a{
+    color: azure;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 600;
+    padding-left: 30px;
+  }
+  .navigation a:hover{
+color: #3e3c3c;
+  }
+.container{
+    background:rgb(20, 18, 65);
+    width: 80vw;
+    height: 80vh;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    margin-top: 18px;
+}
+.img{
+    background-color: rgb(20, 18, 65);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+.img img{
+    max-width: 45vw;
+    max-height: 60vh;
+}
+.upload input{
+display: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    background-color: rgb(255, 255, 255);
+}
+.upload label{
+    color: rgb(255, 255, 255);
+    padding: 8px 20px;
+    border: 2px #292929 solid;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #292929;
+}
+.filters{
+    background: rgb(20, 18, 65);
+    width: 100%;
+}
+.filters ul{
+display: flex;
+flex-direction: column;
+direction: rtl;
+}
+.filters ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+}
+.filters ul li label{
+    color: white;
+}
+.filters ul li:last-child{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.filters ul li a, span{
+    color: white;
+    padding: 10px 20px;
+    background-color:  #565353;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.filters ul li span{
+position: absolute;
+right: 300px;
+}
+#download{
+visibility: hidden;
+}
+@media screen and (max-width:650px){
+.container{
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+}
